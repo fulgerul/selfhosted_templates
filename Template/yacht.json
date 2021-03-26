@@ -84,8 +84,8 @@
     },
     {
       "type": 1,
-      "title": "Wireguard UI",
-      "name": "Wireguard UI",
+      "title": "Wireguard-UI",
+      "name": "Wireguard-UI",
       "description": "A web user interface to manage your WireGuard setup. Features: Friendly UI, authentication, manage extra client's information (name/email/etc) and retrieve configs using QR code / file. ",
       "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/a6/02/48/a6024875-2532-c1db-57ea-ab214f7fb5ff/AppIcon-0-0-85-220-0-0-0-0-4-0-0-0-2x-sRGB-0-0-0-0-0.png/1200x630bb.png",
       "image": "ngoduykhanh/wireguard-ui:latest",
