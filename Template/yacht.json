@@ -84,6 +84,37 @@
     },
     {
       "type": 1,
+      "title": "Wireguard UI",
+      "name": "Wireguard UI",
+      "description": "A web user interface to manage your WireGuard setup. Features: Friendly UI, authentication, manage extra client's information (name/email/etc) and retrieve configs using QR code / file. ",
+      "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/a6/02/48/a6024875-2532-c1db-57ea-ab214f7fb5ff/AppIcon-0-0-85-220-0-0-0-0-4-0-0-0-2x-sRGB-0-0-0-0-0.png/1200x630bb.png",
+      "image": "ngoduykhanh/wireguard-ui:latest",
+      "categories": [
+        "Other",
+        "Tools",
+        "Productivity"
+      ],
+      "platform": "linux",
+      "restart_policy": "unless-stopped",
+      "ports": [
+        {
+          "WebUI": "5000:5000/tcp"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config",
+          "bind": "!config/wireguard-ui"
+        },
+        {
+          "container": "/etc/wireguard",
+          "bind": "/etc/wireguard"
+        }
+      ],
+      "note": "Default passwd is admin/admin. You will have to use systemd to watch for the changes and restart the service once changes have been applied via the webui. See https://github.com/ngoduykhanh/wireguard-ui for more info."
+    },
+    {
+      "type": 1,
       "title": "Snibox",
       "name": "Snibox",
       "description": "Self-hosted snippet manager.",
